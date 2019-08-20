@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.column{
+	float:left;
+}
+.and{
+	float:right;
+}
+.clear::before,
+.clear::after{
+  content: '';
+  width: 100%;
+  float: none;
+  clear: both;
+  display: block;
+}
+.cols-1{
+	width:5%;
+}
+.cols-2{
+	width:10%;
+}
+.cols-3{
+	width:15%;
+}
+.cols-4{
+	width:20%;
+}
+.cols-5{
+	width:25%;
+}
+.cols-6{
+	width:30%;
+}
+.cols-7{
+	width:35%;
+}
+.cols-8{
+	width:40%;
+}
+.cols-9{
+	width:45%;
+}
+.cols-10{
+	width:50%;
+}
+.cols-11{
+	width:55%;
+}
+.cols-12{
+	width:60%;
+}
+.cols-13{
+	width:65%;
+}
+.cols-14{
+	width:70%;
+}
+.cols-15{
+	width:75%;
+}
+.cols-16{
+	width:80%;
+}
+.cols-17{
+	width:85%;
+}
+.cols-18{
+	width:90%;
+}
+.cols-19{
+	width:95%;
+}
+.cols-20{
+	width:100%;
+}
+body{
+	background-image:url(images/line-fon.png);
+	background-repeat:repeat-x;
+}
+.row{
+	margin:0 auto;
+	padding:0;
+	background: url(images/fon.png) no-repeat center top;
+	max-width:1000px;
+	min-height:1150px;
+	display:block;
+}
+.header{
+	display:block;
+	padding-top:48px;
+	min-height:165px;
+}
+.logo{
+	display:inline-block;
+	padding:36px 32px 0 29px;
+	border-right:1px solid #6aadc7;
+	min-height:117px;
+}
+.logo img{
+	max-width:236px;
+	max-height:41px;
+}
+.slogan{
+	display:inline-block;
+	padding:28px 40px 0 40px;
+	min-height:117px;
+}
+.slogan h2,.search h2{
+	font:bold 16px Trebuchet MS;
+	color:#ffffff;
+}
+.slogan h2{
+	padding-bottom:10px;
+}
+.slogan p{
+	font:14px Trebuchet MS;
+	color:#ffffff;
+	opacity:0.6;
+	letter-spacing:-0.8px;
+}
+.search{
+	display:inline-block;
+	border-left:1px solid #6aadc7;
+	min-height:117px;
+	width:28.5%;
+	padding:28px 0 0 36px;
+}
+.search h2{
+	padding-bottom:16px;
+}
+.input{
+	border-left:0;
+	border-right:0;
+	border-top:1px solid #043968;
+	border-bottom:1px solid #1172ae;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#034277+0,0e5387+100 */
+	background: rgb(3,66,119); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(3,66,119,1) 0%, rgba(14,83,135,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(3,66,119,1) 0%,rgba(14,83,135,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(3,66,119,1) 0%,rgba(14,83,135,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034277', endColorstr='#0e5387',GradientType=0 ); /* IE6-9 */
+	opacity:0.5;
+	min-height:28px;
+	min-width:176px;
+	padding-left:8px;
+	color:white;
+}
+.input::-moz-placeholder { color: white; }
+.input::-webkit-input-placeholder { color: white; }
+.button{
+	min-height:27px;
+	min-width:31px;
+	display:block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#710000+0,9f0000+100 */
+	background: rgb(113,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(113,0,0,1) 0%, rgba(159,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(113,0,0,1) 0%,rgba(159,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(113,0,0,1) 0%,rgba(159,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#710000', endColorstr='#9f0000',GradientType=0 ); /* IE6-9 */
+	border-top:1px solid #ae0000;
+	border-bottom:1px solid #580a1b;
+	border-left:0;
+	border-right:0;
+	margin-left:8px;
+	cursor:pointer;
+}
+.button:hover{
+	
+}
+/*белая стрелка на кнопке*/
+.arrow img{
+	padding:0 0 0 12px;
+	display:block;
+	max-height:100%;
+	max-width:100%;
+}
+/*белая стрелка на кнопке--окончание*/
+
+.transparent{
+	min-height:246px;
+}
+.articleL{
+	
+}
+.caption{
+	border-top:1px solid #57e1f8; 
+	border-left:1px solid #217eb9;
+	border-right:1px solid #1a5a83;
+	border-bottom:1px solid #02205c;
+	background: rgb(39,140,198); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(39,140,198,1) 0%, rgba(31,104,148,1) 44%, rgba(26,76,105,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(39,140,198,1) 0%,rgba(31,104,148,1) 44%,rgba(26,76,105,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(39,140,198,1) 0%,rgba(31,104,148,1) 44%,rgba(26,76,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#278cc6', endColorstr='#1a4c69',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding:14px 0 13px 30px;
+}
+.caption h3{
+	font:14px Trebuchet MS bold;
+	color:#ffffff;
+}
+.contentL{
+	padding:30px 30px 36px 30px;
+	background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfcfe+0,dee7f8+45,dee7f8+100 */
+	background: rgb(251,252,254); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(251,252,254,1) 0%, rgba(222,231,248,1) 45%, rgba(222,231,248,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(251,252,254,1) 0%,rgba(222,231,248,1) 45%,rgba(222,231,248,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(251,252,254,1) 0%,rgba(222,231,248,1) 45%,rgba(222,231,248,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfe', endColorstr='#dee7f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	display:block;
+	min-height:265px;
+}
+.picture img{
+	max-width:100%;
+	border:4px solid #ffffff;
+}
+.text{
+	padding:16px 0 2px 0;
+	
+}
+.text p{
+	font:11px Trebuchet MS;
+	color:#54707d;
+	line-height:2.1;
+	text-align:justify;
+	word-spacing:-2.5px;
+	/* overflow:hidden; */
+}
+.text p span{
+	font:bold 11px Trebuchet MS;
+	color:#3b5663;
+}
+.text p a{
+	color:#d00008;
+	text-decoration:underline;
+}
+.container{
+	padding-top:30px;
+	display:block;
+}
+.nav{
+	width:100%;
+	min-height:78px;
+	padding-top:20px;
+	border-top:1px solid #57e1f8; 
+	border-left:1px solid #217eb9;
+	border-right:1px solid #1a5a83;
+	border-bottom:1px solid #02205c;
+	background:/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2997d5+0,206f9f+25,216a94+42,1c587b+61,216a94+78,2690d2+100 */
+	background: rgb(41,151,213); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(41,151,213,1) 0%, rgba(32,111,159,1) 25%, rgba(33,106,148,1) 42%, rgba(28,88,123,1) 61%, rgba(33,106,148,1) 78%, rgba(38,144,210,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(41,151,213,1) 0%,rgba(32,111,159,1) 25%,rgba(33,106,148,1) 42%,rgba(28,88,123,1) 61%,rgba(33,106,148,1) 78%,rgba(38,144,210,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(41,151,213,1) 0%,rgba(32,111,159,1) 25%,rgba(33,106,148,1) 42%,rgba(28,88,123,1) 61%,rgba(33,106,148,1) 78%,rgba(38,144,210,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2997d5', endColorstr='#2690d2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+ul.table{
+	display:table;
+	width:100%;
+}
+.table li{
+	display:table-cell;
+	border-right:1px solid #011e70;
+	border-left:1px solid #4bcaea;
+	text-align:center;
+	min-width:16.4%;
+	min-height:37px;
+}
+.table li:last-child{
+	border-right:none;
+	text-align:center;
+}
+.table li:first-child{
+	border-left:none;
+}
+.cell a{
+	text-decoration:none;
+	font:14px Trebuchet MS;
+	color:#ffffff;
+	padding:9px 0;
+	display: block;
+}
+.content{
+	padding:30px 30px 52px 30px;
+	display:block;
+	background-color:#ffffff;
+	width:100%;
+	min-height:765px;
+}
+.sectionL{
+	display:block;
+	width:50%;
+	padding-right:30px;
+	border-right:1px solid #d6e4e8;
+}
+.captionSection{
+	display:block;
+	padding-bottom:8px;
+	border-bottom:1px solid #d6e4e8;
+	
+}
+.captionSectionR{
+	display:block;
+	width:100%;
+	padding:10px 0 8px 0;
+	border-bottom:1px solid #d6e4e8;
+}
+.captionSection h1{
+	font:26px Trebuchet MS;
+	color:#205098;
+}
+.captionSection h1 span{
+	font:26px Trebuchet MS;
+	color:#a20000;
+}
+.captionSection h2, .captionSectionR h2{
+	font:18px Trebuchet MS;
+	color:#205098;
+}
+.captionSection h2 span, .captionSectionR h2 span{
+	font:18px Trebuchet MS;
+	color:#a20000;
+}
+.articleSectionL{
+	display:block;
+	padding:30px 0 50px 0;
+}
+.articleSectionL p, .articleSectionR p{
+	font:11px Trebuchet MS;
+	color:#54707d;
+	word-spacing:0.5px;
+	line-height:1.7;
+	text-align:justify;
+}
+.articleSectionL p span, .articleSectionR p span{
+	font:bold 11px Trebuchet MS;
+	color:#3b5663;
+}
+.articleSectionL p a, .articleSectionR p a{
+	font:11px Trebuchet MS;
+	color:#d00008;
+}
+.articleSectionL img{
+	margin-right:28px;
+	border:3px solid #ffffff;
+	outline:1px solid #d6e4e8;
+}
+.doingsList{
+	padding:34px 0 25px 0;
+}
+.doingsList li{
+	min-height:41px;
+	max-width:290px;
+	background-color:#d4e3e8;
+	margin-bottom:1px;
+	font:11px Trebuchet MS;
+	color:#4f6c79;
+	padding:15px 0 0 15px;
+}
+.doingsList li:nth-child(even){
+	background-color:#e7eff2;
+}
+.doingsList li a{
+	font:11px Trebuchet MS;
+	color:#628da1;
+	padding-left:15px;
+	
+}
+.doingsLink a{
+	font:11px Trebuchet MS;
+	color:#d00008;
+}
+.sectionR{
+	display:block;
+	width:50%;
+	padding-left:30px;
+}
+.articleSectionR{
+	display:block;
+	padding-top:30px;
+}
+.pic1{
+	min-width:96px;
+	min-height:86px;
+	margin-right:28px;
+	border:3px solid #ffffff;
+	outline:1px solid #d6e4e8;
+}
+.pic2{
+	min-width:96px;
+	min-height:86px;
+	margin-right:28px;
+	border:3px solid #ffffff;
+	outline:1px solid #d6e4e8;
+}
+.pic3{
+	min-width:96px;
+	min-height:86px;
+	margin-right:28px;
+	border:3px solid #ffffff;
+	outline:1px solid #d6e4e8;
+}
+.articleR{
+	font:11px Trebuchet MS;
+	color:#54707d;
+	word-spacing:0.5px;
+	line-height:1.7;
+	text-align:justify;
+}
+.block2{
+	width:100%;
+	padding-top:30px;
+}
+.block3{
+	width:100%;
+	padding-top:30px;
+	padding-bottom:32px;
+}
+ul.linkArticlesR{
+	padding-top:14px;
+}
+.linkArticlesR li{
+	padding-bottom:3px;
+}
+.linkArticlesR a{
+	font:11px Trebuchet MS;
+	color:#d00008;
+}
+.footer{
+	min-height:126px;
+	font:11px Trebuchet MS;
+	color:#acc5cf;
+	text-align:center;
+	padding-top:42px;
+}
